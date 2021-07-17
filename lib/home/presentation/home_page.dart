@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tokopedia_ui/home/presentation/widget/custom_app_bar.dart';
 import 'package:supercharged/supercharged.dart';
+import 'package:tokopedia_ui/home/presentation/widget/flash_sale.dart';
 import 'package:tokopedia_ui/home/presentation/widget/menu_button.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 
@@ -57,7 +58,7 @@ class HomePage extends StatelessWidget {
                             ),
                           ),
                           SizedBox(
-                            height: 80,
+                            height: 50,
                           )
                         ],
                       ),
@@ -65,7 +66,7 @@ class HomePage extends StatelessWidget {
                         top: 90,
                         child: Container(
                           width: MediaQuery.of(context).size.width,
-                          height: 100,
+                          height: 90,
                           child: ListView(
                             scrollDirection: Axis.horizontal,
                             children: [
@@ -129,7 +130,25 @@ class HomePage extends StatelessWidget {
                         },
                       );
                     }).toList(),
-                  )
+                  ),
+                  SizedBox(height: 20),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      MenuButton("assets/category-icon2/bangga-lokal.png",
+                          label: "Bangga Lokal"),
+                      MenuButton("assets/category-icon2/bazar-hari-ini.png",
+                          label: "Bazar Hari Ini"),
+                      MenuButton("assets/category-icon2/live-shopping.png",
+                          label: "Live shopping"),
+                      MenuButton("assets/category-icon2/belanja-harian.png",
+                          label: "Belanja Harian"),
+                      MenuButton("assets/category-icon2/bayar-ditempat.png",
+                          label: "Bayar di Tempat"),
+                    ],
+                  ),
+                  SizedBox(height: 10),
+                  FlashSale(),
                 ],
               ),
             ),
