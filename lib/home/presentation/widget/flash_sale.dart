@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:tokopedia_ui/home/presentation/widget/countdown_widget.dart';
+import 'package:tokopedia_ui/home/presentation/widget/product_thumbnail.dart';
 
 class FlashSale extends StatelessWidget {
   const FlashSale({Key? key}) : super(key: key);
@@ -44,11 +46,7 @@ class FlashSale extends StatelessWidget {
                               SizedBox(
                                 width: 5,
                               ),
-                              Text("20 : 10 : 00",
-                                  style: TextStyle(
-                                      fontSize: 13,
-                                      color: Colors.white,
-                                      fontWeight: FontWeight.bold)),
+                              CountDownWidget(),
                             ],
                           ),
                         )),
@@ -66,7 +64,7 @@ class FlashSale extends StatelessWidget {
             SizedBox(height: 10),
             Container(
                 width: MediaQuery.of(context).size.width,
-                color: Colors.blue,
+                color: Colors.green,
                 height: 250,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
@@ -76,36 +74,15 @@ class FlashSale extends StatelessWidget {
                       height: 230,
                       width: 120,
                     ),
-                    Container(
-                      margin: EdgeInsets.symmetric(vertical: 10, horizontal: 2),
-                      height: 230,
-                      width: 120,
-                      color: Colors.white,
-                    ),
-                    Container(
-                      margin: EdgeInsets.symmetric(vertical: 10, horizontal: 2),
-                      height: 230,
-                      width: 120,
-                      color: Colors.white,
-                    ),
-                    Container(
-                      margin: EdgeInsets.symmetric(vertical: 10, horizontal: 2),
-                      height: 230,
-                      width: 120,
-                      color: Colors.white,
-                    ),
-                    Container(
-                      margin: EdgeInsets.symmetric(vertical: 10, horizontal: 2),
-                      height: 230,
-                      width: 120,
-                      color: Colors.white,
-                    ),
-                    Container(
-                      margin: EdgeInsets.symmetric(vertical: 10, horizontal: 2),
-                      height: 230,
-                      width: 120,
-                      color: Colors.white,
-                    ),
+                    ProductThumbnail(),
+                    ProductThumbnail(),
+                    ProductThumbnail(),
+                    ProductThumbnail(),
+                    ProductThumbnail(),
+                    ProductThumbnail(),
+                    ProductThumbnail(),
+                    ProductThumbnail(),
+                    ProductThumbnail(),
                   ],
                 ))
           ],
