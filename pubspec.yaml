@@ -30,6 +30,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   supercharged: ^2.0.0
   carousel_slider: ^4.0.0
+  flutter_svg: ^0.22.0
 
 dev_dependencies:
   flutter_test:
@@ -51,6 +52,7 @@ flutter:
     - assets/category-icon/
     - assets/carousel-slider/
     - assets/category-icon2/
+    - assets/product/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
